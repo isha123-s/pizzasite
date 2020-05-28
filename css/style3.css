@@ -1,0 +1,114 @@
+*{
+    margin:0;
+    padding:0;
+}
+:root{
+    --navbar-height:59px;
+}
+#navbar{
+    display:flex;
+    position:sticky;
+    top:0px;
+    height:80px;
+}
+#navbar::before{
+    content:"";
+    background-color: black;
+    position: absolute;
+    top:0px;
+    left:0px;
+    height:100%;
+    width:100%;
+    z-index: -1;
+    opacity:0.1;
+}
+#nav{
+    list-style:none;
+    font-size:2.4rem;
+    color:rgb(121, 29, 29);
+    display: block;
+    margin: auto;
+}
+.product-container{
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+
+}
+.product-header {
+    display: flex;
+    width:100%;
+    justify-content: flex-start;
+    font-weight: bold;
+    font-size: 1.25em;
+    color: #333;
+}
+.product-title {
+    width: 45%;
+    display: flex;
+    align-items: center;
+    margin-right: 1.5em;
+    padding-bottom: 10px;
+    margin-top: 10px;
+    font-size: 1.2rem;
+
+}
+
+.price {
+    width: 20%;
+    font-size: 1.2em;
+    color: #333;
+    display: flex;
+    align-items: center;
+    margin-right: 1.5em;
+    padding-bottom: 10px;
+    margin-top: 10px;
+}
+.total {
+    width: 20%;
+    font-size: 1.2em;
+    color: #333;
+    display: flex;
+    align-items: center;
+    margin-right: 1.5em;
+    padding-bottom: 10px;
+    margin-top: 10px;
+}
+
+.quantity {
+    width: 35%;  
+    display: flex;
+    align-items: center;
+    margin-right: 1.5em;
+    padding-bottom: 10px;
+    margin-top: 10px;
+    font-size:1.2rem;
+}
+
+.product {
+    display:flex;
+    width:45%;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1.2em;
+}
+.btn{
+    padding:6px 20px;
+    border:1px solid rgb(80, 26, 26);
+    background-color:rgb(226, 139, 139);
+    color:white;
+    display: block;
+    margin: auto;
+    margin-top: 30px;
+    font-size: 1.2rem;
+    border-radius:10px;
+    cursor: pointer;
+}
+.product-container ion-icon{
+    font-size: 25px;
+    color:black;
+    margin-left: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+}
